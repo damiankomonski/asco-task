@@ -4,7 +4,7 @@
         { name: 'item 2' },
         { name: 'item 11' },
         { name: 'item 3' },
-        { name: 'item 1009as' }
+        { name: 'item 1009' }
     ];
 
     function getItemsMaxNumber(items){
