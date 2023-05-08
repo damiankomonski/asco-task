@@ -4,15 +4,19 @@
         { name: 'item 2' },
         { name: 'item 11' },
         { name: 'item 3' },
-        { name: 'item 10' }
+        { name: 'item 1009as' }
     ];
 
     function getItemsMaxNumber(items){
         let numbers = [];
 
-        numbers = items.map((element) => {
-            return Number(element.name.match(/[0-9]+/)[0]);
-        });
+        for(let i = 0; i < items.length; i++){
+            let number = items[i].name.match(/\s[0-9]+/);
+
+            if(number){
+                numbers.push(number[0]);
+            }
+        }
 
         if(numbers.length === 0){
             return 0;
