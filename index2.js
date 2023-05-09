@@ -12,10 +12,10 @@
         let maxNumber = 0;
 
         for(let i = 0; i < items.length; i++){
-            let number = items[i].name.match(/\s[0-9]+/); // return null if doesn't find number
+            let number = items[i].name.match(/\s[0-9]+/);
 
             if(number){
-                number = Number(number[0]); // get found number and convert to Number
+                number = Number(number[0]);
                 numbers.push(number);
 
                 if(number > maxNumber){
